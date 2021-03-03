@@ -1,0 +1,28 @@
+{
+  "name": "weighted-assign-action",
+  "version": "1.0.1",
+  "description": "Automatically distributes PR reviews",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "parcel build src/index.js --out-dir dist --target node --bundle-node-modules",
+    "prettier": "prettier --write 'src/**/*.js'",
+    "prettier-check": "prettier --list-different 'src/**/*.js'",
+    "eslint": "eslint 'src/**/*.js'"
+  },
+  "author": "Caleb Sharp",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0",
+    "date-fns": "^2.16.1"
+  },
+  "devDependencies": {
+    "@twostoryrobot/eslint-config": "^2.2.2",
+    "@twostoryrobot/prettier-config": "^2.0.1",
+    "eslint": "^7.13.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-react": "^7.21.5",
+    "parcel": "^1.12.4",
+    "prettier": "^1.19.1"
+  }
+}
