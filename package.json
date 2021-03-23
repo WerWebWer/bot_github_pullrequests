@@ -1,28 +1,37 @@
+  
 {
-  "name": "weighted-assign-action",
-  "version": "1.0.1",
-  "description": "Automatically distributes PR reviews",
+  "name": "new-pr-welcome",
+  "version": "1.0.0",
+  "description": "welcomes users who submit their first pr",
   "main": "dist/index.js",
   "scripts": {
-    "build": "parcel build src/index.js --out-dir dist --target node --bundle-node-modules",
-    "prettier": "prettier --write 'src/**/*.js'",
-    "prettier-check": "prettier --list-different 'src/**/*.js'",
-    "eslint": "eslint 'src/**/*.js'"
+    "start": "node ./dist/index.js",
+    "test": "mocha && xo --extend probot"
   },
-  "author": "Caleb Sharp",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/behaviorbot/new-pr-welcome.git"
+  },
+  "author": "hiimbex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/behaviorbot/new-pr-welcome/issues"
+  },
+  "homepage": "https://github.com/behaviorbot/new-pr-welcome#readme",
   "dependencies": {
-    "@actions/core": "^1.2.6",
-    "@actions/github": "^4.0.0",
-    "date-fns": "^2.16.1"
+    "probot": "9.3.0"
   },
   "devDependencies": {
-    "@twostoryrobot/eslint-config": "^2.2.2",
-    "@twostoryrobot/prettier-config": "^2.0.1",
-    "eslint": "^7.13.0",
-    "eslint-config-prettier": "^6.15.0",
-    "eslint-plugin-react": "^7.21.5",
-    "parcel": "^1.12.4",
-    "prettier": "^1.19.1"
+    "eslint-config-probot": "^0.1.0",
+    "expect": "^1.20.2",
+    "mocha": "^5.2.0",
+    "xo": "^0.23.0"
+  },
+  "engines": {
+    "node": ">= 8.0.0",
+    "npm": ">= 4.0.0"
+  },
+  "xo": {
+    "space": 4
   }
 }
