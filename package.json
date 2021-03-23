@@ -1,0 +1,40 @@
+{
+  "name": "request-info",
+  "version": "1.0.0",
+  "description": "A GitHub app that writes a message to a closed PR",
+  "main": "index.js",
+  "scripts": {
+    "start": "probot run ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WerWebWer/bot_github_pullrequests.git"
+  },
+  "author": "hiimbex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WerWebWer/bot_github_pullrequests/issues"
+  },
+  "homepage": "https://github.com/WerWebWer/bot_github_pullrequests#readme",
+  "devDependencies": {
+    "eslint-plugin-import": "^2.7.0",
+    "expect": "^1.20.2",
+    "smee-client": "^1.0.1",
+    "nodemon": "^1.17.2",
+    "mocha": "^3.4.2",
+    "standard": "^10.0.3"
+  },
+  "standard": {
+    "env": [
+      "mocha"
+    ]
+  },
+  "engines": {
+    "node": ">= 8.3.0",
+    "npm": ">= 5.3.0"
+  },
+  "dependencies": {
+    "probot": "^11.0.5",
+    "probot-config": "^1.1.0"
+  }
+}
