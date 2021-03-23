@@ -2,7 +2,7 @@ name: Weighted Assign Action
 description: Automatically distribute pull request reviews
 author: Caleb Sharp
 branding:
-  icon: move
+  icon: move 
   color: green
 inputs:
   repo-token:
