@@ -20,7 +20,8 @@ var quotes = [
   "_**I like that!**_",
   "_**You've made a lot of progress!**_",
   "_**You’ve outdone yourself!**_",
-  "_**I knew you could handle**_"
+  "_**I knew you could handle**_",
+  "_**My job here is done**_"
 ];
 
 module.exports = app => {
